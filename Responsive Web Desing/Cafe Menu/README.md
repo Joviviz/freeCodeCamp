@@ -1,7 +1,8 @@
 # Cafe Menu
-This code aims to simulate a menu for a cafeteria, it servers as a basic CSS practice
+### This code aims to simulate a menu for a cafeteria, it servers as a basic CSS practice
 
 ## Main HTML file
+### It holds the main information of the page such as letters and images
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -66,7 +67,7 @@ This code aims to simulate a menu for a cafeteria, it servers as a basic CSS pra
 ```
 
 ## CSS File
-
+### This file customizes the attributes (such as color, height, lenght, size, etc) of the elements within the HTML file, using a code "value"  
 ```css
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
