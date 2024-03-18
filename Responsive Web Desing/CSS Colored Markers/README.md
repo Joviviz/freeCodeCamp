@@ -1,64 +1,97 @@
-#CSS Colored Markers
+# CSS Colored Markers
 
+### This Project aims to build a set of colored markers.
+### Using different ways to set color values (RGBA, HEX, HSLA), pairing colors with each other and using functions such as "color-gradient" and "box-shadow" to create light based reflections and shadows.
+
+# HTML file
 ```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
-    <link href="styles.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Markers</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="menu">
-      <main>
-        <h1>CAMPER CAFE</h1>
-        <p class="established">Est. 2020</p>
-        <hr>
-        <section>
-          <h2>Coffee</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-          <article class="item">
-            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Mocha</p><p class="price">4.50</p>
-          </article>
-        </section>
-        <section>
-          <h2>Desserts</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-          <article class="item">
-            <p class="dessert">Donut</p><p class="price">1.50</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-          </article>
-        </section>
-      </main>
-      <hr class="bottom-line">
-      <footer>
-        <p>
-          <a href="https://github.com/Joviviz" target="_blank">Visit my github!</a>
-        </p>
-        <p class="address">Thank you freeCodeCamp!</p>
-      </footer>
-    </div>
+    <main>
+      <h1>CSS Color Markers</h1>
+      <div class="container">
+        <div class="marker red">
+          <div class="cap"></div>
+          <div class="sleeve"></div>
+        </div>
+        <div class="marker green">
+          <div class="cap"></div>
+          <div class="sleeve"></div>
+        </div>
+        <div class="marker blue">
+          <div class="cap"></div>
+          <div class="sleeve"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <br>
+      <p>-</p>
+      <p>
+        Visit my github : <a href="https://github.com/Joviviz" target="_blank">Joviviz</a>
+      </p>
+    </footer>
   </body>
 </html>
+```
+# CSS file
+
+```css
+h1 {
+    text-align: center;
+  }
+  
+  .container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+  }
+  
+  .marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+  }
+  
+  .cap {
+    width: 60px;
+    height: 25px;
+  }
+  
+  .sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+  }
+  
+  .cap, .sleeve {
+    display: inline-block;
+  }
+  
+  .red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  }
+  
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+  }
+  
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+  }
+
+  footer{
+    font-size: 16px;
+    text-align: center;
+  }
 ```
