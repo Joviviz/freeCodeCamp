@@ -1,4 +1,7 @@
-# HTML Forms by building Registration Form
+# Registration Form
+### HTML Forms practice by building a Registration Form that uses labels, inputs and fieldsets
+
+## HTML file
 
 ```html
 <!DOCTYPE html>
@@ -52,6 +55,7 @@
     </footer>
 </html>
 ```
+## CSS File
 
 ```css
 body {
