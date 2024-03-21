@@ -1,5 +1,9 @@
 # Registration Form
+
 ### HTML Forms practice by building a Registration Form that uses labels, inputs and fieldsets
+
+## <ins>Objective :<ins>
+### Build a signup page. Control what types of data people can type into your form, and test some new CSS tools for styling your page.
 
 ## HTML file
 
