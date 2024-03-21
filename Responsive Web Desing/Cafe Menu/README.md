@@ -1,4 +1,6 @@
 # Cafe Menu
+
+## <ins>Objective :<ins>
 ### This code aims to simulate a menu for a cafeteria, it servers as a basic CSS practice
 
 ## Main HTML file
