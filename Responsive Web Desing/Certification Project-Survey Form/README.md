@@ -2,6 +2,9 @@
 
 ### The First certification project from the Responsive Web Desing course
 
+## <ins>Objective : <ins>
+### Build an app that is functionally similar to https://survey-form.freecodecamp.rocks. Do not copy this demo project.
+
 ## HTML file
 ```html
 <!DOCTYPE html>
