@@ -1,6 +1,8 @@
 # Cat Website
-Learning the most common HTML tags by building a cat photo app. <br>
-Website desingned for uploading cat photos, describing your own cat's personality and list things cats like and dislike.
+
+## <ins>Objective :<ins>
+
+### Learning the most common HTML tags by building a cat photo app. <br> Website desingned for uploading cat photos, describing your own cat's personality and list things cats like and dislike.
 
 ```html
 <!DOCTYPE html>
