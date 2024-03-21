@@ -2,7 +2,7 @@
 ## <ins>Objective :<ins>
 
 ### This Project aims to build a set of colored markers.
-### Using different ways to set color values (RGBA, HEX, HSLA), pairing colors with each other and using functions such as "color-gradient" and "box-shadow" to create light based reflections and shadows.
+### It uses different ways to set color values (RGBA, HEX, HSLA), pairing colors with each other and using functions such as "color-gradient" and "box-shadow" to create light based reflections and shadows.
 
 # HTML file
 ```html
