@@ -1,7 +1,7 @@
 # Rothko Painting
 
 ## <ins>Objective :<ins>
-#### Simulate one of Rothko's painting by learning how to use the CSS Nox Model effectively
+#### Simulate one of Rothko's painting by learning how to use the CSS Box Model effectively
 
 
 ## HTML File
