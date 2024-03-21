@@ -1,6 +1,6 @@
 # CSS Flexbox Photo Gallery
 ## <ins>Objective :<ins>
-### UIse Flexbox to build a responsive photo gallery webpage.
+### Use Flexbox to build a responsive photo gallery webpage.
 
 ## HTML file
 ```html
