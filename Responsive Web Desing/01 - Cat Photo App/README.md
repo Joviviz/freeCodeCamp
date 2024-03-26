@@ -4,6 +4,7 @@
 
 ### Learning the most common HTML tags by building a cat photo app. <br> Website desingned for uploading cat photos, describing your own cat's personality and list things cats like and dislike.
 
+## Hypertext
 ```html
 <!DOCTYPE html>
 
