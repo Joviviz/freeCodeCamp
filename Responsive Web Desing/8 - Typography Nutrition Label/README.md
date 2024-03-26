@@ -64,7 +64,7 @@
 </body>
 <footer>
   <div>-</div>
-  <h2><a href='"https://github.com/Joviviz'>Joviviz</a></h2>
+  <h2><a href='https://github.com/Joviviz'>Joviviz</a></h2>
 </footer>
 </html>
 ```
