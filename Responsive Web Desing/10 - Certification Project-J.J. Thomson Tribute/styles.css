@@ -1,0 +1,120 @@
+
+body{
+    background-image: url(https://cdn.discordapp.com/attachments/1224065809576366200/1224065912349397154/image-from-rawpixel-id-5924106-jpeg.jpg?ex=661c2337&is=6609ae37&hm=be43fa8e87301efa1dfa9ad6fd48544a711449a1f170a8d152bc94c182b28156&);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background: #131323;
+    background: linear-gradient(180deg, hsla(240, 30%, 11%, 1) 0%, rgb(31, 29, 69) 100%);
+    color: #f5f6f7;
+    margin: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1.title{
+    padding: 0.75em;
+}
+
+p.title {
+    color: rgb(207, 217, 225);
+    padding-bottom: 1em;
+}
+
+#img-div{
+    display: block;
+    justify-content: center;
+    background-color:rgb(47, 47, 74);
+    width: 98%;
+    padding-top: 0;
+    padding-bottom: 2em;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+#image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 0.2em;
+
+}
+
+#img-caption{
+    display: flex;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(206, 219, 231);
+    padding-top: 1.5em;
+    margin: 0 5%;
+}
+
+ul{
+    display: block;
+    justify-content: center;
+    width: 55%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+}
+
+#info-div{
+    display: block;
+    justify-content: center;
+    width: 95%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+    background-color:rgb(47, 47, 74);
+    border-radius: 1.5em;
+    
+}
+
+#tribute-info{
+    display: block;
+    justify-content: center;
+    font-style: italic;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#signature{
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 1em;
+    width: 84%;
+}
+
+#tribute-paralink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+}
+
+a {padding-left: 0.25em;}
+a:link {color:#ffffff;}
+a:visited {color:#b9b7dc;}
+a:hover {color:#cb8dd9;}
