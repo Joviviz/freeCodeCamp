@@ -1,7 +1,9 @@
-# Title
+# Intermediate Css - Cat Painting
 
 ## <ins>Objective :<ins>
-### 
+### Mastering CSS positioning is essential for creating visually appealing and responsive web layouts.
+
+### Build a cat paiting website, working with the z-index property, absolute positioning and the transform property
 
 ## HTML File
 ```html
