@@ -34,7 +34,7 @@ Fulfill the user stories and pass all the tests below to complete this project. 
             <h1 id="title" class="title">Joseph John Thomson</h1>
             <p id="title" class="title" >The man that revolutionized atomic studies</p>
             <div id="img-div">
-                <img id="image" src="https://cdn.discordapp.com/attachments/1224065809576366200/1224076126645784737/800px-Sir_J.J._Thomson_LCCN2014715407_1.jpg?ex=661c2cba&is=6609b7ba&hm=6993e96e8d4dfa3378b04443b70e86122bdbcc5b9dc657bfbff2717966b1421d&" alt="tributed-person-img"  >
+                <img id="image" src="https://i.imgur.com/HbbHDTp.jpg" alt="tributed-person-img"  >
                 <figcaption id="img-caption">A vintage portrait photo circa 1900s of our beloved British physicist Sir Joseph John "J. J." Thomson - winner of the Nobel Prize in Physics</figcaption>
             </div>
             <nav>
@@ -70,7 +70,7 @@ Fulfill the user stories and pass all the tests below to complete this project. 
 ```css
 
 body{
-    background-image: url(https://cdn.discordapp.com/attachments/1224065809576366200/1224065912349397154/image-from-rawpixel-id-5924106-jpeg.jpg?ex=661c2337&is=6609ae37&hm=be43fa8e87301efa1dfa9ad6fd48544a711449a1f170a8d152bc94c182b28156&);
+    background-image: url(https://i.imgur.com/1LgwsmA.jpeg);
     font-family: Arial, Helvetica, sans-serif;
 }
 
