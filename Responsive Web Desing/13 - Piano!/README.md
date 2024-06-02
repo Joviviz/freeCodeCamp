@@ -107,9 +107,9 @@ html {
   }
 
   .signature{
-    width: 200px;
     position: absolute;
-    top: 50px;
+    top: 23px;
+    right: 20px;
     margin: 0 auto;
   }
   
