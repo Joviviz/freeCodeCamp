@@ -1,14 +1,574 @@
-# Title
+# Building a Technical Documentation page
 
 ## <ins>Objective :<ins>
-### 
+### Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks. Do not copy this demo project.
+
+
+
+1. You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
+
+2. Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five
+
+3. The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+
+4. Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
+
+5. The .main-section elements should contain at least ten p elements total (not each)
+
+6. The .main-section elements should contain at least five code elements total (not each)
+
+7. The .main-section elements should contain at least five li items total (not each)
+
+8. You can see a nav element with a corresponding id="navbar"
+
+9.  The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+
+10.  Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+
+11.  The header element in the #navbar must come before any link (a) elements in the navbar
+
+12.  Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+
+13.  When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+
+14.  On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+
+15. Your technical documentation should use at least one media query
+
+### Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+> [!NOTE]
+> Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
+
 
 ## HTML File
 ```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="styles.css">
+        <title>Technical Documentation - SML</title>
+    </head>
 
+    <body>
+        <nav id="navbar">
+            <header class="header-navbar">SML Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Characteristics">Characteristics</a></li>
+                <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li><a class="nav-link" href="#Constants">Constants</a></li>
+                <li><a class="nav-link" href="#Functions">Functions</a></li>
+                <li><a class="nav-link" href="#Basic_List_Operations">Basic List Operations</a></li> 
+                <li><a class="nav-link" href="#Cases">Cases</a></li> 
+                <li><a class="nav-link" href="#Reference">Reference</a></li>                  
+            </ul>
+
+        </nav>
+
+
+        <main id="main-doc" >
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>
+                    SML or Standard Meta Language is a general-purpose,
+                    particular, functional programming language with compile-type
+                    checking and type inference. 
+                    It is a statically composed language, with
+                    an extensible type framework. It supports polymorphic 
+                    type inference, which eliminates the burden of specifying
+                    types of variables and significantly encourages code
+                    re-use. It provides a productive programmed capacity for
+                    data structures and functions. It's known for having high 
+                    capability in functional programming.
+                </p>
+                <p>
+                    Among compiler scholars and programming language analysts,
+                    SML is mainstream, as well as in the improvement of proving
+                    theorems. It is particular among generally utilized languages
+                    that have a proper specification, given as typing rules and 
+                    operational semantics which was fully developed in 1997.
+                </p>
+            </section>
+
+            <section class="main-section" id="Characteristics">
+                <header>Characteristics</header>
+                <ul>
+                    <li>Used in Functional Programming:</li>
+                    <ul>
+                        <li>Supports functional programming, emphasizing the use of functions as first-class citizens.</li>
+                        <li>Functions can be passed as arguments, returned from other functions, and stored in data structures.</li>
+                    </ul>
+
+                    <li>Type inference:</li>
+                    <ul>
+                        <li>Allows the compiler to deduce the types of expressions automatically.</li>
+                        <li>If x and y are int, then x + y = int.</li>
+                        <li>Makes the code concise and easier to write while maintaining type safety.</li>
+                    </ul>
+
+                    <li>Heavily typed:</li>
+                    <ul>
+                        <li>All name and expression types are checked at compile-time.</li>
+                        <li>Type errors are caught early in the development process.</li>
+                        <li>High capability in functional programming.</li>
+                    </ul>
+
+                    <li>Module System:</li>
+                    <ul>
+                        <li>Structures, signatures, and functors.</li>
+                        <li>Structures are used to group related definitions, signatures define module interfaces, 
+                            and functors are module-level functions that take structures as arguments and return new structures.</li>
+                    </ul>
+
+                    <li>Recursion:</li>
+                    <ul>
+                        <li>Recursive functions are the primary mean of iteration
+                            and data processing, consistent with its functional programming nature.</li>
+                    </ul>
+
+                    <li>Immutability:</li>
+                    <ul>
+                        <li>By default, data structures in SML are immutable, meaning once created, their contents cannot be altered.</li>
+                        <li>This immutability supports safer concurrency and easier reasoning about code behavior.</li>
+                    </ul>
+
+                </ul>
+            </section>
+
+            <section class="main-section" id="Hello_World">
+                <header>Hello World</header>
+                <p>
+                    Para fazer "Hello World" basta usar o comando print: 
+                </p>
+                <code>
+                    print ("Hello World!");
+                </code>
+                <p></p>
+
+                    
+
+            </section>
+            
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <ul>
+                    <li>
+                        <h1>Immutable Variables</h1> 
+                        <p>
+                            Once a value is assigned to an immutable variable, it cannot be changed.
+                            Declaring variables a, b and c.
+                        </p> 
+                        <code>
+                            val a = 2;<br>
+                            val b = 3;<br>
+                            val c = a + b;
+                        </code>
+                    </li>
+                    <li>
+                        <h1>Mutable Variables</h1>
+                        <p>
+                            Mutable variables are defined using the ref keyword. 
+                            These variables can be updated after their initial assignment 
+                            using the := operator.
+                        </p>
+                        <code>
+                            val x = ref 10;<br>
+                            val y = ref 20;<br><br>
+
+                            (* Accessing the value *)<br>
+                            val currentX = !x;  (* currentX is now 10 *)<br><br>
+
+                            (* Updating the value *)<br>
+                            x := 15;<br>
+                            val newX = !x;  (* newX is now 15 *)<br><br>
+
+                            (* Performing operations *)<br>
+                            y := !x + !y;  (* y now holds 35 *)<br>
+
+                        </code>
+                    </li>
+                </ul>
+
+
+            </section>
+
+            <section class="main-section" id="Data_Types">
+                <header>Data Types</header>
+                <ul >
+                    <li><h1>Basic Data Types</h1></li>
+                        <ul class="basic-data-types">
+                            <li><h3>Integers (int):</h3></li>
+                            <code>val x : int = 42;</code>
+
+                            <li><h3>Reals (real):</h3></li>
+                            <code>val y : real = 3.14;
+                            </code>
+
+                            <li><h3>Characters (char):</h3></li>
+                            <code>val c : char = #"a";
+                            </code>
+
+                            <li><h3>Strings (string):</h3></li>
+                            <code>val s : string = "hello";
+                            </code>
+
+                            <li><h3>Booleans (bool):</h3></li>
+                            <code>val b : bool = true;
+                            </code>
+
+                        </ul>
+
+                    <li><h1>Composite Data Types</h1></li>
+                        <ul class="composite-data-types">
+                            <li><h3>Tuples:</h3></li>
+                            <p>Tuples can hold multiple values of possibly different types.</p>
+                            <code>val t : int * string = (1, "one");
+                            </code>
+
+                            <li><h3>Lists:</h3></li>
+                            <p>Lists are homogeneous, meaning all elements must be of the same type.</p>
+                            <code>val lst : int list = [1, 2, 3, 4, 5];
+                            </code>
+
+                            <li><h3>Records:</h3></li>
+                            <p>Records are collections of named fields.</p>
+                            <code>val r : {name : string, age : int} = {name = "Alice", age = 30};
+                            </code>
+                        </ul>
+                    
+                    <li><h1>Function Types</h1></li>
+                        <ul class="function-types">
+                            <li>Functions are first-class citizens in SML and have their own types.</li>
+                            <code>val add : int * int -> int = fn (x, y) => x + y;
+                            </code>
+                        </ul>
+
+                    <li><h1>Option Types</h1></li>
+                        <ul class="option-types">
+                            <li>Option types are used to represent a value that might be missing (NONE) or present (SOME value).</li>
+                            <code>  val opt : int option = SOME 10;<br>
+                                    val noVal : int option = NONE;
+                            </code>
+                        </ul>
+
+                    <li><h1>User-Defined Types</h1></li>
+                        <ul class="user-defined-types">
+                            <li><h3>Datatypes:</h3></li>
+                            <p>You can define your own types using the datatype keyword.</p>
+                            <code>  datatype color = Red | Green | Blue;<br>
+                                    val c : color = Red;
+                            </code>
+
+                            <li><h3>Records within Datatypes:</h3></li>
+                            <code>  datatype person = Person of {name : string, age : int};<br>
+                                    val p : person = Person {name = "Bob", age = 25};
+                            </code>
+
+                            <li><h3>Parameterized Types:</h3></li>
+                            <code>  datatype 'a tree = Empty | Node of 'a * 'a tree * 'a tree;<br>
+                                    val t : int tree = Node (1, Empty, Empty);
+                            </code>
+                        </ul>
+
+                    
+                </ul>
+            </section>
+
+            <section class="main-section" id="Constants">
+                <header>Constants</header>
+                <p>
+                    In Standard ML (SML), there is no built-in constant specifically for mathematical constants like 
+                    𝜋. However, you can define such constants yourself. Here is how you can define a constant for 𝜋:
+                </p>
+                <code>
+                    val pi : real = 3.141592653589793;
+                </code>
+                <p>
+                    You can then use this constant in your calculations. Here is a complete example showing how you might use the 
+                    𝜋 constant in some functions:
+                </p>
+            </section>
+
+            <section class="main-section" id="Functions">
+                <header>Functions</header>
+                <p>Defining a function:</p>
+                <p>fun [name] [parameters] = [body]</p>
+                <p><h2>Functions pattern:</h2></p>
+                <p>
+                    fun (padrao)1 = (expr)1<br>
+                    | (padrao)2 = (expr)2<br>
+                    ...<br>
+                    | (padrao)n = (expr);<br>
+                </p>
+            </section>
+
+
+            <section class="main-section" id="Basic_List_Operations">
+                <header>Basic List Operations</header> 
+                <ul>
+                    <li><p>null(x) - returns "true" if x is an empty list</p></li>
+                    <li><p>hd(x) - returns the "head" of x</p></li>
+                    <li><p>tl(x) - returns the "tail" of x</p></li>
+                    <li><p>a::x - builds a list with the head of "a" and tail of "x"</p></li>
+                </ul>
+                <h1>Examples</h1>
+                <ul>
+                    <li><code>hd([1,2,3]) = 1</code></li>
+                    <li><code>tl([1,2,3]) = [2,3]</code></li>
+                    <li><code>1::[2,3] = [1,2,3]</code></li>
+                </ul>
+
+                <h1>Append (x,y)</h1>
+                <p>Adds a list or a value to a list</p>
+                <p>The append fucntion is built-in using "@":</p>
+                <code>
+                    val x : int list = [1,2];<br>
+                    val z = [3,4,5];<br><br>
+
+                    val xz = x@z;
+                </code>
+                <p>Creating the append function:</p>
+                <code>
+                    val x : int list = [1,2];<br>
+                    val z = [3,4,5];<br><br>
+
+                    fun append(x,z) = <br>
+                    if null(x) then z <br>
+                    else hd(x) :: append(tl(x),z);<br><br>
+
+                    append(x,z);
+                </code>
+
+                <p>Recursive order from the code:</p>
+                <ol>
+                    <li>append([1,2],[3,4,5])</li>
+                    <li>1 :: append([2],[3,4,5])</li>
+                    <li>1 :: 2 :: append([],[3,4,5])</li>
+                    <li>1 :: 2 :: [3,4,5]</li>
+                    <li>1 :: [2,3,4,5] = [1,2,3,4,5]</li>
+                </ol>
+
+                <h1>Reverse (x,z)</h1>
+                <p>Reverses x and adds to z</p>
+                <p>The reverse fucntion is built-in using "rev()":</p>
+                <code>
+                    rev([1,2,3,4]);
+                </code>
+                <p>Creating the reverse function:</p>
+                <code>
+                    val x = [2,3,4]; <br>
+                    val z = [1];<br><br>
+                    
+                    fun reverse(x,z) = <br>
+                      if null(x) then z<br>
+                      else reverse(tl(x), hd(x)::z);<br><br>
+                    
+                    reverse(x,z);
+                </code>
+
+                <p>Recursive order from the code:</p>
+                <ol>
+                    <li>reverse([2,3,4][1])</li>
+                    <li>reverse([3,4], 2::[1]) -> reverse([3,4], [2,1])</li>
+                    <li>reverse([4], 3::[2,1]) -> reverse([4], [3,2,1])</li>
+                    <li>reverse([], 4::[3,2,1]) -> reverse([],[4,3,2,1])</li>
+                    <li>[4,3,2,1]</li>
+                </ol>
+
+                <p>Reverse using append:</p>
+                <code>
+                    val x = [1,2,3,4];<br><br>
+
+                    fun reverse(x) = <br>
+                    if null(x) then nil<br>
+                    else reverse(tl(x)) @ [hd(x)];<br><br>
+
+                    reverse(x);
+                </code>
+                <ol>
+                    <li>reverse [1,2,3,4]</li>
+                    <li>reverse [2,3,4] @ [1]</li>
+                    <li>reverse [3,4] @ [2] @ [1]</li>
+                    <li>reverse [4] @ [3] @ [2] @ [1]</li>
+                    <li>reverse [] @ [4] @ [3] @ [2] @ [1]</li>
+                    <li>[] @ [4] @ [3] @ [2] @ [1]</li>
+                    <li>[4] -> [4,3] -> [4,3,2] -> [4,3,2,1]</li>
+                </ol>
+
+            </section>
+
+            <section class="main-section" id="Cases">
+                <header>Cases</header>
+                <p>Listed functions are composed of 2 cases:</p>
+                <ul>
+                    <li>Base case -> for an empty list</li>
+                    <li>Recursive case -> for a non-empty list</li>
+                </ul>
+
+                <p>There's a way to rewrite functions such as these: </p>
+                <code>
+                    fun tamanhoLista(x) = <br>
+                    if null(x) then 0<br>
+                    else 1 + tamanhoLista(tl(x));<br><br>
+                  
+                  tamanhoLista([0,1,2]);
+                </code>
+                <p>As this:</p>
+                <code>
+                    fun tamanhoLista([]) = 0<br>
+                    | tamanhoLista(a::y) = 1 + tamanhoLista(y);<br><br>
+
+                    tamanhoLista([0,1,2]);
+                </code>
+
+                <p>Rewritting the append function</p>
+                <p><h2>Original Function:</h2></p>
+                <code>
+                    val x = [1,2];<br>
+                    val z = [3,4,5];<br><br>
+
+                    fun append(x,z) = <br>
+                    if null(x) then z<br>
+                    else hd(x) :: append(tl(x),z);<br>
+
+                    append(x,z);
+                </code>
+
+                <p><h2>Cased Function:</h2></p>
+                <code>
+                    val x = [1,2];<br>
+                    val z = [3,4,5];<br><br>
+
+                    fun append([],z) = z<br>
+                    | append(a::y,z) = a::append(y,z);<br><br>
+
+                    append(x,z);
+                </code>
+                <p></p>
+            </section>
+
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <p>This documentation was possible using the following sources: </p>
+                
+                <article>
+                    <ul>
+                        <li>Geeks for Geeks <a class="reference" href="https://www.geeksforgeeks.org/what-is-standard-meta-language-sml/" target="_blank">
+                                Website
+                            </a></li>
+                        <li>RU Computer Science's <a class="reference" href="https://www.youtube.com/watch?v=2sqjUWGGzTo&list=PLbdi8aNvDqlKKXdG7qn0rQsfH0z1hf7FC" target="_blank">
+                                playlist
+                        </a></li>
+                        <li>My seminary for university over at <a class="reference" href="https://github.com/Joviviz/University/tree/main/4th%20-%20Semester/Paradigmas%20e%20Linguagens%20de%20Programa%C3%A7%C3%A3o/Seminario%20-%20SML" target="_blank">
+                                github @Joviviz
+                        </a></li>
+                    </ul>
+                </article>
+
+            </section>
+
+
+        </main>
+    </body>
+
+</html>
 ```
 
 ## CSS File
 ```css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 2em;
+    background-color: #222222;
+    color: #ffffff;
+}
 
+
+header{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(129, 188, 243);
+}
+
+#main-doc {
+    margin-left: 270px;
+    padding: 20px;
+
+}
+
+.header-navbar{
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+    
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    border-right: solid;
+    border-color:#272727;
+    
+}
+
+@media (max-width: 900px) {
+    #navbar {
+        position: absolute;
+        width: 100%;
+        height: 180px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #main-doc{
+        margin-left: 0;
+        margin-top: 200px ;
+    }
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    
+}
+
+#navbar li {
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+    
+}
+
+
+#navbar a:hover{
+    background-color: #464545;
+}
+
+.reference{
+    color: #99e9f7;
+}
 ```
