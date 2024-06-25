@@ -1,7 +1,7 @@
 # Building a city skyline
 
 ## <ins>Objective :<ins>
-### build a city skyline using CSS variables. CSS variables help you organize your styles and reuse them.
+### Build a city skyline using CSS variables. CSS variables help you organize your styles and reuse them.
 
 ## HTML File
 ```html
