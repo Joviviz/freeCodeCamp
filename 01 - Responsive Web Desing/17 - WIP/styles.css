@@ -55,9 +55,8 @@ body{
   text-decoration: none;
   color: black;
   padding: 29px 30px;
-  border: solid 1px black;
+  border-left: solid 2px black;
   text-align: center;
-  border-collapse: collapse;
 }
 
 #nav-bar a:hover{
@@ -70,20 +69,36 @@ main {
   font-family: 'Lato', sans-serif;
 }
 
-#nav-bar ul li:last-child a{
-  border-left: solid 2px black;
-}
-
 #email-div{
-  width: 100%;
+  width: 50%;
   text-align: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-#submit{
-  background-color: yellow;
+#email{
+  max-width: 275px;
+  width: 100%;
 }
 
-@media (max-width: 700px){
+.button{  
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: 1000;
+}
+
+.button:hover{
+  background: grey;
+  cursor: pointer;
+}
+
+@media (max-width: 750px){
   #header{
     height: 150px;
   }
@@ -110,6 +125,10 @@ main {
   #nav-bar li{
     width: 33.333%;
     border-top: solid 2px black;
+  }
+
+  #nav-bar>ul>li:last-child>a{
+    border-left: 0;
   }
 
   main{
