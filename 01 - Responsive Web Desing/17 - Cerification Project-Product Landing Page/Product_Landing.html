@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
-    <title>Browser</title>
+    <title>Product Landing Page</title>
   </head>
 
   <body>
@@ -23,9 +23,9 @@
         
         <nav id="nav-bar" >
           <ul>
-            <li><a class="nav-link" href="" >Features</a></li>
-            <li><a class="nav-link" href="" >Features</a></li>
-            <li><a class="nav-link" href="" >Features</a></li>
+            <li><a class="nav-link" href="#Pricing" >Pricing</a></li>
+            <li><a class="nav-link" href="#How-it-works" >How It Works</a></li>
+            <li><a class="nav-link" href="#Features" >Features</a></li>
           </ul>
         </nav>
     </header>
@@ -48,27 +48,119 @@
         </form>
       </div>
       
-      <div id="guitar-outline-icon-isolated-on-a-white-background-acoustic-guitar-symbol-for-web-and-mobile-app-illustrations-free-vector">
-        <div id="ad-1" class="ad">
-          <span id="fire-symbol" class="material-symbols-outlined">local_fire_department</span>
-          <p class="symbol-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque maxime laudantium eaque sunt natus aspernatur reiciendis. Debitis corrupti voluptatem facilis. Atque nisi quisquam fuga earum. Illum sint at tempora.</p>
+      <section class="ad-wrapper" id="Features">
+
+        <div class="grid">
+          <div class="icon">
+            <span class="material-symbols-outlined feature-symbol icon-large">local_fire_department</span>
+          </div>
+          <div class="desc">
+            <h2 class="desc-text">Quality Assurance & Lifetime Warranty</h2>
+            <p class="desc-text">
+              Our major selling point could is the strong emphasis on high-quality
+               craftsmanship and durability. We offer an 
+               extended warranty on our guitars, hence why we focus as
+                one that stands behind the longevity and quality of our 
+                instruments.
+            </p>
+
+          </div>
         </div>
 
-        <div id="ad-1" class="ad">
-          <span id="fire-symbol" class="material-symbols-outlined">local_fire_department</span>
-          <p class="symbol-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque maxime laudantium eaque sunt natus aspernatur reiciendis. Debitis corrupti voluptatem facilis. Atque nisi quisquam fuga earum. Illum sint at tempora.</p>
+        <div class="grid">
+          <div class="icon">
+            <span class="material-symbols-outlined icon-large">brush</span>
+          </div>
+          <div class="desc">
+            <h2 class="desc-text">Customization</h2>
+            <p class="desc-text">
+              The ability to fully customize your guitar has never been better.
+               This appeals to both seasoned players and beginners who want 
+               something personal.
+            </p>
+
+          </div>
         </div>
-        
-        <div id="ad-1" class="ad">
-          <span id="fire-symbol" class="material-symbols-outlined">local_fire_department</span>
-          <p class="symbol-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque maxime laudantium eaque sunt natus aspernatur reiciendis. Debitis corrupti voluptatem facilis. Atque nisi quisquam fuga earum. Illum sint at tempora.</p>
+
+        <div class="grid">
+          <div class="icon">
+            <span class="material-symbols-outlined icon-large">music_note</span>
+          </div>
+          <div class="desc">
+            <h2 class="desc-text">Play Before You Pay</h2>
+            <p class="desc-text">
+              For online buyers, we offer a 30-day trial period
+               where you can test the guitar before committing. 
+               If you aren’t satisfied, you can return it with free shipping!
+            </p>
+
+          </div>
         </div>
-        
-        
-      </div>
+        <div class="grid">
+          <div class="icon">
+            <span class="material-symbols-outlined icon-large">nature</span>
+          </div>
+          <div class="desc">
+            <h2 class="desc-text">Eco-Friendly Models</h2>
+            <p class="desc-text">
+              We appeal to environmentally-conscious 
+              model by offering eco-friendly guitar 
+              models made from sustainable or reclaimed woods, 
+              paired with recyclable packaging!
+            </p>
+
+          </div>
+        </div>
+
+      </section>
 
 
-      <video id="video" src="">
+      <section id="How-it-works">
+        <iframe id="video" class="video" src="https://www.youtube.com/embed/Y-33v7bJLIc" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </section>
+      
+      <section id="Pricing">
+        <div class="price-grid">
+          <h3 class="product-title" >Dreadnought Guitar</h3>
+          <h2>$12.000</h2>
+          <div class="product-desc">
+            <p>Lorem ipsum.</p>
+            <p>ipsum.</p> 
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+          </div>
+
+          <button class="btn-product" type="button">Select</button>
+        </div>
+        <div class="price-grid">
+          <h3 class="product-title" >Orchestra Guitar</h3>
+          <h2>$2.900</h2>
+          <div class="product-desc">
+            <p>Lorem ipsum.</p>
+            <p>ipsum.</p> 
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+          </div>
+
+          <button class="btn-product" type="button">Select</button>
+        </div>
+        <div class="price-grid">
+          <h3 class="product-title" >Parlor Guitar</h3>
+          <h2>$950</h2>
+          <div class="product-desc">
+            <p>Lorem ipsum.</p>
+            <p>ipsum.</p> 
+            <p>Lorem ipsum dolor.</p>
+            <p>Lorem ipsum.</p>
+          </div>
+
+          <button class="btn-product" type="button">Select</button>
+        </div>
+
+      </section>
       
     </main>
   </body>
