@@ -103,12 +103,11 @@ body{
   cursor: pointer;
 }
 
-
-.ad-wrapper{
+#Features{
   display: flex;
   text-align: center;
   flex-direction: column;
-
+  visibility: visible !important;
 }
 
 .grid{

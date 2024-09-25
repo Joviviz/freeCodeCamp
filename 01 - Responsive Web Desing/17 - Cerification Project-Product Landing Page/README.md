@@ -56,7 +56,7 @@
         </form>
       </div>
       
-      <section class="ad-wrapper" id="Features">
+      <section id="Features">
 
         <div class="grid">
           <div class="icon">
@@ -65,11 +65,11 @@
           <div class="desc">
             <h2 class="desc-text">Quality Assurance & Lifetime Warranty</h2>
             <p class="desc-text">
-              Our major selling point could is the strong emphasis on high-quality
-               craftsmanship and durability. We offer an 
-               extended warranty on our guitars, hence why we focus as
-                one that stands behind the longevity and quality of our 
-                instruments.
+              Our primary selling point is the
+              strong emphasis on high-quality craftsmanship 
+              and durability. We proudly offer an extended 
+              warranty on our guitars, demonstrating our commitment to 
+              the longevity and exceptional quality of our instruments.
             </p>
 
           </div>
@@ -82,9 +82,10 @@
           <div class="desc">
             <h2 class="desc-text">Customization</h2>
             <p class="desc-text">
-              The ability to fully customize your guitar has never been better.
-               This appeals to both seasoned players and beginners who want 
-               something personal.
+              Now, more than ever, you can fully customize your guitar to 
+              fit your unique style and preferences. This option appeals 
+              to both seasoned players and beginners looking for a truly 
+              personal instrument.
             </p>
 
           </div>
@@ -97,9 +98,9 @@
           <div class="desc">
             <h2 class="desc-text">Play Before You Pay</h2>
             <p class="desc-text">
-              For online buyers, we offer a 30-day trial period
-               where you can test the guitar before committing. 
-               If you aren’t satisfied, you can return it with free shipping!
+              Online buyers enjoy a 30-day trial period to test the guitar. 
+              If it's not the perfect fit, return it with free shipping—no 
+              questions asked!
             </p>
 
           </div>
@@ -111,17 +112,15 @@
           <div class="desc">
             <h2 class="desc-text">Eco-Friendly Models</h2>
             <p class="desc-text">
-              We appeal to environmentally-conscious 
-              model by offering eco-friendly guitar 
-              models made from sustainable or reclaimed woods, 
-              paired with recyclable packaging!
+              We cater to environmentally-conscious customers by offering 
+              eco-friendly guitars made from sustainable or reclaimed woods, 
+              packaged in recyclable materials.
             </p>
 
           </div>
         </div>
 
       </section>
-
 
       <section id="How-it-works">
         <iframe id="video" class="video" src="https://www.youtube.com/embed/Y-33v7bJLIc" 
@@ -169,6 +168,8 @@
         </div>
 
       </section>
+
+      <p id="github-link" style="text-align: center; "><a id="github-link" style="text-decoration: none;" href='https://github.com/Joviviz' target="_blank">Joviviz</a></p>
       
     </main>
   </body>
@@ -283,12 +284,11 @@ body{
   cursor: pointer;
 }
 
-
-.ad-wrapper{
+#Features{
   display: flex;
   text-align: center;
   flex-direction: column;
-
+  visibility: visible !important;
 }
 
 .grid{
@@ -456,6 +456,7 @@ main {
 
 
 }
+
 
 
 
