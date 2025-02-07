@@ -1,0 +1,38 @@
+body{
+    margin: 100px 0;
+    padding: 0;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#welcome-section{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li{
+    float: right;
+}
+
+li a {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: beige;
+}
