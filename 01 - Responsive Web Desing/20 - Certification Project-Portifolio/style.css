@@ -1,6 +1,6 @@
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 58px 0;
+    margin: 0;
     padding: 0;
     background-color: antiquewhite;
 }
@@ -9,26 +9,6 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-#welcome-section{
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    background-color: blueviolet;
-    box-sizing: border-box;
-}
-
-#welcome-section h1{
-    text-align: center;
-    font-size: 5vw;
-}
-#welcome-section h2{
-    text-align: center;
-    font-size: 3vw;
 }
 
 ul{
@@ -53,4 +33,25 @@ li a{
 
 li a:hover{
     background-color: beige;
+}
+
+#welcome-section{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    box-sizing: border-box;
+}
+
+#welcome-section h1{
+    text-align: center;
+    font-size: 5vw;
+}
+#welcome-section h2{
+    text-align: center;
+    font-size: 3vw;
 }
