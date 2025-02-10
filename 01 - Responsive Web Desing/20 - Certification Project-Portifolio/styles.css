@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --jessie: #D83F87;
+    --waluigi-purple: #2a1b3d;
+    --universe-purple: #43358c;
+    --jovi-purple: #8874bc;
+    --jovi-purple-shade: #665989;
+    --grayish: #a4b3b6;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: rgba(0, 0, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+    
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 35px 30px;
+    transition: all 0.5s;
+}
+
+li a span{
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+li a span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+li a:hover span{
+    padding-right: 25px;
+}
+
+li a:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+li a:hover {
+    background-color: var(--waluigi-purple);
+}
+
+
+
+#welcome-section{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-galaxia-em-aquarela_23-2149225175.jpg?t=st=1739218142~exp=1739221742~hmac=b00ffd1c15eec1d8334d3b26234c5fbc2ad141883405347a2a17858d6b6442ae&w=900");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#welcome-section span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+    width: 7px;
+    height: 7px;
+    border-radius: 15px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+    animation: universe 3s linear infinite;
+}
+
+#welcome-section span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    height: 1px;
+    transform: translateY(-50%);
+    background:linear-gradient(90deg, white, transparent ) ;
+}
+
+
+#welcome-section span:nth-child(1) {
+    top: 0;
+    right: 100px;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+#welcome-section span:nth-child(2) {
+    top: 0;
+    right: -200px;
+    left: initial;
+    animation-delay: 0.5s;
+    animation-duration: 4.2s;
+}
+
+#welcome-section span:nth-child(3) {
+    top: 0;
+    right: 300px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3.8s;
+}
+
+#welcome-section span:nth-child(4) {
+    top: 0;
+    right: -400px;
+    left: initial;
+    animation-delay: 1.5s;
+    animation-duration: 5s;
+}
+
+#welcome-section span:nth-child(5) {
+    top: 0;
+    right: 500px;
+    left: initial;
+    animation-delay: 2s;
+    animation-duration: 4s;
+}
+
+#welcome-section span:nth-child(6) {
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 2.5s;
+    animation-duration: 3.5s;
+}
+
+#welcome-section span:nth-child(7) {
+    top: 0;
+    right: 700px;
+    left: initial;
+    animation-delay: 3s;
+    animation-duration: 4.8s;
+}
+
+#welcome-section span:nth-child(8) {
+    top: 0;
+    right: 800px;
+    left: initial;
+    animation-delay: 3.5s;
+    animation-duration: 5.2s;
+}
+
+#welcome-section span:nth-child(9) {
+    top: 0;
+    right: 900px;
+    left: initial;
+    animation-delay: 4s;
+    animation-duration: 3.2s;
+}
+
+#welcome-section span:nth-child(10) {
+    top: 0;
+    right: 1000px;
+    left: initial;
+    animation-delay: 4.5s;
+    animation-duration: 4.5s;
+}
+
+#welcome-section span:nth-child(11) {
+    top: 0;
+    right: 1200px;
+    left: initial;
+    animation-delay: 5s;
+    animation-duration: 6s;
+}
+
+#welcome-section span:nth-child(12) {
+    top: 0;
+    right: 1400px;
+    left: initial;
+    animation-delay: 5.5s;
+    animation-duration: 5.5s;
+}
+
+#welcome-section span:nth-child(13) {
+    top: 0;
+    right: 1600px;
+    left: initial;
+    animation-delay: 6s;
+    animation-duration: 7s;
+}
+
+#welcome-section span:nth-child(14) {
+    top: 0;
+    right: 1800px;
+    left: initial;
+    animation-delay: 6.5s;
+    animation-duration: 6.2s;
+}
+
+#welcome-section span:nth-child(15) {
+    top: 0;
+    right: 2000px;
+    left: initial;
+    animation-delay: 7s;
+    animation-duration: 5.8s;
+}
+
+#welcome-section span:nth-child(16) {
+    top: 0;
+    right: 2200px;
+    left: initial;
+    animation-delay: 7.5s;
+    animation-duration: 6.5s;
+}
+
+#welcome-section span:nth-child(17) {
+    top: 0;
+    right: 2400px;
+    left: initial;
+    animation-delay: 8s;
+    animation-duration: 7.2s;
+}
+
+#welcome-section span:nth-child(18) {
+    top: 0;
+    right: 2600px;
+    left: initial;
+    animation-delay: 8.5s;
+    animation-duration: 6.8s;
+}
+
+#welcome-section span:nth-child(19) {
+    top: 0;
+    right: 2800px;
+    left: initial;
+    animation-delay: 9s;
+    animation-duration: 7.5s;
+}
+
+#welcome-section span:nth-child(20) {
+    top: 0;
+    right: 3000px;
+    left: initial;
+    animation-delay: 9.5s;
+    animation-duration: 8s;
+}
+
+
+
+@keyframes universe{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+#welcome-h1-wrapper{
+    padding: 30px 50px 50px 50px;
+    background-image: linear-gradient(to right, var(--jovi-purple), var(--universe-purple));
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(0, 136, 255, 0.35) 0px -2px 6px 0px inset;
+
+    z-index: 99;
+}
+
+#welcome-section h1{
+    text-align: center;
+    font-size: 5.5vw;
+}
+#welcome-section h2{
+    text-align: center;
+    font-size: 2.7vw;
+}
+
+#projects{   
+    background-color: grey;
+    z-index: 98;
+    
+}
+
+#projects h1{
+    margin: 0 0;
+    text-align: center;
+    font-size: 4vw;
+    padding: 100px 50px 50px 50px;
+}
+
+@media screen and (min-width: 1200px) {
+    #welcome-section h1{
+        font-size: 55px;
+    }
+    #welcome-section h2{
+        font-size: 27px;
+    }
+  }
