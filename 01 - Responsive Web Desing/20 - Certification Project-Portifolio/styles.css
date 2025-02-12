@@ -27,31 +27,32 @@ body{
     top: 0;
     width: 100%;
     z-index: 100;
-
+    overflow-x: hidden;
 }
 
 ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: black;
     box-shadow: rgba(0, 0, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    
-    
 }
 
 li{
-    float: right;
+    margin-left: 10px;
 }
 
 li a{
-    display: inline-block;
     color: white;
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 35px 30px;
+    padding: 2vw 2vw;
     transition: all 0.5s;
 }
 
@@ -86,6 +87,7 @@ li a:hover {
 
 
 #welcome-section{
+    position: relative;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -312,6 +314,7 @@ li a:hover {
 
 #welcome-section h1{
     text-align: center;
+    margin-bottom: 25px;
     font-size: 5.5vw;
 }
 #welcome-section h2{
@@ -319,9 +322,10 @@ li a:hover {
     font-size: 2.7vw;
 }
 
-#projects{   
+#projects{
+    position: relative; 
     background-color: grey;
-    z-index: 98;
+    z-index: 50;
     
 }
 
@@ -332,11 +336,31 @@ li a:hover {
     padding: 100px 50px 50px 50px;
 }
 
+.project-grid {
+    position: relative; 
+    max-width: 100%; 
+    overflow: hidden;
+    z-index: 98;
+  }
+  
+  .project-tile {
+    position: relative; 
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 0, 0); 
+    border: 1px solid #000;
+    z-index: 99;
+  }
+
 @media screen and (min-width: 1200px) {
     #welcome-section h1{
         font-size: 55px;
     }
     #welcome-section h2{
         font-size: 27px;
+    }
+
+    li a{
+        padding: 35px 30px;
     }
   }
