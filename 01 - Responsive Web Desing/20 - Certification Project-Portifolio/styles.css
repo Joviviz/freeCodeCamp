@@ -338,19 +338,34 @@ li a:hover {
 
 .project-grid {
     position: relative; 
-    max-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
     z-index: 98;
-  }
+}
   
   .project-tile {
-    position: relative; 
-    width: 500px;
-    height: 500px;
+    margin: 10px;
+    position: relative;
+    width: 90vw;
+    height: 70vh;
     background-color: rgb(255, 0, 0); 
     border: 1px solid #000;
     z-index: 99;
-  }
+}
+
+
+@media screen and (min-width: 768px) {
+    .project-grid{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project-tile{
+        width: calc(50% - 20px);
+    }
+}
 
 @media screen and (min-width: 1200px) {
     #welcome-section h1{
@@ -363,4 +378,9 @@ li a:hover {
     li a{
         padding: 35px 30px;
     }
+
+    .project-tile{
+        width: calc(33.33% - 20px);
+    }
   }
+
