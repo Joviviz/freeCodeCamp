@@ -370,10 +370,43 @@ li a:hover {
     object-fit: cover;
   }
 
-  .project-tile a{
-    font-size: 2rem;
-    padding: 0.8rem 0.5rem;
+  .project-tile p{
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    font-weight: 1000;
     text-align: center;
+  }
+
+  .holographic-card{
+    transition: all 0.5s ease;
+  }
+
+  .holographic-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      0deg, 
+      transparent, 
+      transparent 30%, 
+      rgba(120, 174, 255, 0.6)
+    );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  
+  .holographic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(204, 0, 255, 0.5);
+  }
+  
+  .holographic-card:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
   }
 
 @media screen and (min-width: 768px) {
@@ -386,10 +419,15 @@ li a:hover {
     width: calc(50% - 20px);
     height: 55vw;
   }
+
+  .project-tile p{
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .project-grid{
+  .project-tile{
     height: 28vw;
   }
 
@@ -406,5 +444,10 @@ li a:hover {
 
   .project-tile {
     width: calc(25% - 20px);
+  }
+
+  .project-tile p{
+    font-size: 1.6vw;
+    margin-bottom: 1.2vw;
   }
 }
