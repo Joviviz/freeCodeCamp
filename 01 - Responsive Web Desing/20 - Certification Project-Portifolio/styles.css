@@ -329,6 +329,7 @@ li a:hover {
   position: relative;
   background-color: grey;
   z-index: 50;
+  padding-bottom: 50px;
 }
 
 #projects h1 {
@@ -348,17 +349,32 @@ li a:hover {
 }
 
 .project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin: 10px;
   position: relative;
-  width: 90vw;
-  height: 70vh;
-  background-color: rgb(255, 0, 0);
-  border: 1px solid #000;
+  width: 70vw;
+  height: 80vw;
+  background-color: var(--jovi-purple);
+  border-radius: 25px;
   z-index: 99;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .project-tile img {
-}
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .project-tile a{
+    font-size: 2rem;
+    padding: 0.8rem 0.5rem;
+    text-align: center;
+  }
 
 @media screen and (min-width: 768px) {
   .project-grid {
@@ -368,10 +384,15 @@ li a:hover {
   }
   .project-tile {
     width: calc(50% - 20px);
+    height: 55vw;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .project-grid{
+    height: 28vw;
+  }
+
   #welcome-section h1 {
     font-size: 55px;
   }
@@ -384,6 +405,6 @@ li a:hover {
   }
 
   .project-tile {
-    width: calc(33.33% - 20px);
+    width: calc(25% - 20px);
   }
 }
