@@ -318,7 +318,8 @@ li a:hover {
 }
 
 #welcome-section h2 {
-  color: rgb(247, 230, 252);
+  color: rgb(226, 211, 230);
+  font-style: oblique;
   text-align: center;
   font-size: 2.7vw;
 }
@@ -326,6 +327,7 @@ li a:hover {
 #projects {
   position: relative;
   background-color: var(--waluigi-purple);
+  background-image: url(https://i.pinimg.com/originals/8e/46/15/8e46150f790fbefe438d9c2767c32ad1.gif);
   z-index: 50;
   padding-bottom: 50px;
 }
@@ -385,7 +387,6 @@ li a:hover {
 
 .go_up:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(204, 0, 255, 0.5);
 }
 
 .holographic-card {
@@ -418,6 +419,41 @@ li a:hover {
 .holographic-card:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
+}
+
+#contacts{
+  padding: 50px;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgb(145, 65, 199) 0%, rgb(157, 20, 20) 50%, rgb(196, 119, 18) 100%);
+}
+
+#contacts h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#contacts p {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-links a i {
+  margin-right: 8px;
+  font-size: 1.5rem;
 }
 
 @keyframes darkPurpleFade {
