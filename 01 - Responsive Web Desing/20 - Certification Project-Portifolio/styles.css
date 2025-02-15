@@ -353,6 +353,7 @@ li a:hover {
 }
 
 .project-tile {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -375,6 +376,8 @@ li a:hover {
 }
 
 .project-tile p {
+  color: #2a1b3d;
+  font-style: oblique;
   font-size: 4vw;
   margin-bottom: 2vw;
   font-weight: 1000;
@@ -389,6 +392,17 @@ li a:hover {
   transform: scale(1.05);
 }
 
+
+
+.text_3d{
+  text-shadow: 0 1px 0 var(--universe-purple), 0 2px 0 var(--universe-purple),
+      0 3px 0 var(--universe-purple), 0 4px 0 var(--universe-purple),
+      0 5px 0 var(--universe-purple), 0 6px 0 var(--universe-purple),
+      0 7px 0 var(--universe-purple), 0 8px 0 var(--universe-purple),
+      0 9px 0 var(--universe-purple), 0 10px 0 var(--universe-purple),
+      0 11px 0 var(--universe-purple), 0 12px 0 var(--universe-purple),
+      0 20px 30px rgba(0, 0, 0, 0.5);
+}
 .holographic-card {
   transition: all 0.5s ease;
 }
@@ -424,7 +438,7 @@ li a:hover {
 #contacts{
   padding: 50px;
   background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgb(145, 65, 199) 0%, rgb(157, 20, 20) 50%, rgb(196, 119, 18) 100%);
+  background: linear-gradient(90deg, rgb(180, 95, 237) 0%, rgb(235, 32, 32) 50%, rgb(196, 119, 18) 100%);
 }
 
 #contacts h1 {
@@ -435,7 +449,7 @@ li a:hover {
 #contacts p {
   font-style: italic;
   font-size: 1.2rem;
-  color: #aaa;
+  color: white;
 }
 
 .social-links {
