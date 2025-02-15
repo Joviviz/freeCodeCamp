@@ -302,41 +302,42 @@ li a:hover {
 
 #welcome-h1-wrapper {
   padding: 30px 50px 50px 50px;
-  background-image: linear-gradient(
-    to right,
-    var(--jovi-purple),
-    var(--universe-purple)
-  );
+  animation: darkPurpleFade 30s infinite;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px,
     rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
     rgba(0, 136, 255, 0.35) 0px -2px 6px 0px inset;
-
   z-index: 99;
 }
 
 #welcome-section h1 {
+  color: rgb(247, 230, 252);
   text-align: center;
   margin-bottom: 25px;
   font-size: 5.5vw;
+  
 }
 #welcome-section h2 {
+  color: rgb(247, 230, 252);
   text-align: center;
   font-size: 2.7vw;
 }
 
 #projects {
   position: relative;
-  background-color: grey;
+  background-color: var(--waluigi-purple);
   z-index: 50;
   padding-bottom: 50px;
 }
 
 #projects h1 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-style: italic;
   margin: 0 0;
   text-align: center;
   font-size: 4vw;
-  padding: 100px 50px 50px 50px;
+  padding: 6vw 2vw;
 }
 
 .project-grid {
@@ -377,6 +378,15 @@ li a:hover {
     text-align: center;
   }
 
+  .go_up{
+    transition: all 0.5s ease;
+  }
+
+  .go_up:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(204, 0, 255, 0.5);
+  }
+
   .holographic-card{
     transition: all 0.5s ease;
   }
@@ -392,10 +402,10 @@ li a:hover {
       0deg, 
       transparent, 
       transparent 30%, 
-      rgba(120, 174, 255, 0.6)
+      rgba(255, 255, 255, 0.3)
     );
     transform: rotate(-45deg);
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     opacity: 0;
   }
   
@@ -408,6 +418,24 @@ li a:hover {
     opacity: 1;
     transform: rotate(-45deg) translateY(100%);
   }
+
+  @keyframes darkPurpleFade {
+    0% {
+        background-color: #4B0082; /* Indigo, a dark shade of purple */
+    }
+    25% {
+        background-color: #483D8B; /* Dark Slate Blue */
+    }
+    50% {
+        background-color: #3b2a60; /* Purple */
+    }
+    75% {
+        background-color: #8A2BE2; /* Blue Violet */
+    }
+    100% {
+        background-color: #4B0082; /* Back to Indigo */
+    }
+}
 
 @media screen and (min-width: 768px) {
   .project-grid {
