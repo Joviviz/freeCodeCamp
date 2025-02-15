@@ -310,13 +310,13 @@ li a:hover {
   z-index: 99;
 }
 
-#welcome-section h1 {
+#welcome-section h1{
   color: rgb(247, 230, 252);
   text-align: center;
   margin-bottom: 25px;
   font-size: 5.5vw;
-  
 }
+
 #welcome-section h2 {
   color: rgb(247, 230, 252);
   text-align: center;
@@ -331,7 +331,7 @@ li a:hover {
 }
 
 #projects h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   font-style: italic;
   margin: 0 0;
@@ -341,6 +341,7 @@ li a:hover {
 }
 
 .project-grid {
+  padding-top: 15px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -366,75 +367,75 @@ li a:hover {
 }
 
 .project-tile img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-  .project-tile p{
-    font-size: 4vw;
-    margin-bottom: 2vw;
-    font-weight: 1000;
-    text-align: center;
-  }
+.project-tile p {
+  font-size: 4vw;
+  margin-bottom: 2vw;
+  font-weight: 1000;
+  text-align: center;
+}
 
-  .go_up{
-    transition: all 0.5s ease;
-  }
+.go_up {
+  transition: all 0.5s ease;
+}
 
-  .go_up:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(204, 0, 255, 0.5);
-  }
+.go_up:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(204, 0, 255, 0.5);
+}
 
-  .holographic-card{
-    transition: all 0.5s ease;
-  }
+.holographic-card {
+  transition: all 0.5s ease;
+}
 
-  .holographic-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-      0deg, 
-      transparent, 
-      transparent 30%, 
-      rgba(255, 255, 255, 0.3)
-    );
-    transform: rotate(-45deg);
-    transition: all 0.7s ease;
-    opacity: 0;
-  }
-  
-  .holographic-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(204, 0, 255, 0.5);
-  }
-  
-  .holographic-card:hover::before {
-    opacity: 1;
-    transform: rotate(-45deg) translateY(100%);
-  }
+.holographic-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(255, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.7s ease;
+  opacity: 0;
+}
 
-  @keyframes darkPurpleFade {
-    0% {
-        background-color: #4B0082; /* Indigo, a dark shade of purple */
-    }
-    25% {
-        background-color: #483D8B; /* Dark Slate Blue */
-    }
-    50% {
-        background-color: #3b2a60; /* Purple */
-    }
-    75% {
-        background-color: #8A2BE2; /* Blue Violet */
-    }
-    100% {
-        background-color: #4B0082; /* Back to Indigo */
-    }
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(204, 0, 255, 0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+@keyframes darkPurpleFade {
+  0% {
+    background-color: #4b0082; /* Indigo, a dark shade of purple */
+  }
+  25% {
+    background-color: #483d8b; /* Dark Slate Blue */
+  }
+  50% {
+    background-color: #3b2a60; /* Purple */
+  }
+  75% {
+    background-color: #8a2be2; /* Blue Violet */
+  }
+  100% {
+    background-color: #4b0082; /* Back to Indigo */
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -448,14 +449,14 @@ li a:hover {
     height: 55vw;
   }
 
-  .project-tile p{
+  .project-tile p {
     font-size: 3vw;
     margin-bottom: 2vw;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .project-tile{
+  .project-tile {
     height: 28vw;
   }
 
@@ -474,7 +475,7 @@ li a:hover {
     width: calc(25% - 20px);
   }
 
-  .project-tile p{
+  .project-tile p {
     font-size: 1.6vw;
     margin-bottom: 1.2vw;
   }
