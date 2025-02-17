@@ -9,9 +9,683 @@
 
 ## HTML File
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Portifolio</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li>
+          <a href="#contacts"><span>Contact</span></a>
+        </li>
+        <li>
+          <a href="#projects"><span>Projects</span></a>
+        </li>
+        <li>
+          <a href="#welcome-section"><span>About</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="welcome-section">
+      <div class="stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="welcome-h1-wrapper" class="go_up">
+        <h1>Heyo I'm Jovi!</h1>
+        <h2>Front End Developer and Computer Science student</h2>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1>Here are some projects I made from freecodeCamp</h1>
+      <hr />
+
+      <div class="project-grid">
+        <a
+          href="https://codepen.io/Joviviz/pen/yyBdovQ"
+          target="_blank"
+          class="project-tile holographic-card"
+        >
+          <img src="https://i.ibb.co/zTrQ19jV/project5-1.png" />
+          <p class="hover-underline">Product Landing</p>
+        </a>
+
+        <a
+          href="https://codepen.io/Joviviz/pen/KwPjvXB"
+          target="_blank"
+          class="project-tile holographic-card"
+        >
+          <img src="https://i.ibb.co/67Ny6XR1/project2.png" alt="project2" />
+          <p>J.J. Thomson Tribute</p>
+        </a>
+
+        <a
+          href="https://codepen.io/Joviviz/pen/ByaNxRE"
+          target="_blank"
+          class="project-tile holographic-card"
+        >
+          <img src="https://i.ibb.co/7qzDp2R/project3.png" alt="project3" />
+          <p>SML Documentation</p>
+        </a>
+
+        <a
+          href="https://codepen.io/Joviviz/pen/pvzXrwO"
+          target="_blank"
+          class="project-tile holographic-card"
+        >
+          <img src="https://i.ibb.co/PG36jtcZ/example.png" alt="project1" />
+          <p>Survey Form</p>
+        </a>
+      </div>
+    </section>
+    <hr />
+
+    <section id="contacts">
+      <h1>Let's style your website !</h1>
+      <p class="text_3d">How do you take your coffee?</p>
+      <div class="social-links">
+        <a
+          id="profile-link"
+          class="go_up"
+          target="_blank"
+          href="https://github.com/Joviviz"
+          ><i class="fab fa-github"></i>GitHub</a
+        >
+        <a
+          id="profile-link"
+          class="go_up"
+          target="_blank"
+          href="https://www.linkedin.com/in/joviviz/"
+          ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+        >
+        <a
+          id="profile-link"
+          class="go_up"
+          target="_blank"
+          href="mailto:pedrojoao4249@gmail.com"
+          ><i class="fas fa-envelope"></i>Send a mail</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
 ```
 
 ## CSS File
 ```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --jessie: #d83f87;
+  --waluigi-purple: #2a1b3d;
+  --universe-purple: #43358c;
+  --jovi-purple: #8874bc;
+  --jovi-purple-shade: #665989;
+  --grayish: #a4b3b6;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  overflow-x: hidden;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  box-shadow: rgba(0, 0, 255, 0.25) 0px 30px 60px -12px inset,
+    rgba(255, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+li {
+  margin-left: 10px;
+}
+
+li a {
+  color: white;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 2vw 2vw;
+  transition: all 0.5s;
+}
+
+li a span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+li a span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+li a:hover span {
+  padding-right: 25px;
+}
+
+li a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+li a:hover {
+  background-color: var(--waluigi-purple);
+}
+
+#welcome-section {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-galaxia-em-aquarela_23-2149225175.jpg?t=st=1739218142~exp=1739221742~hmac=b00ffd1c15eec1d8334d3b26234c5fbc2ad141883405347a2a17858d6b6442ae&w=900");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#welcome-section span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: white;
+  width: 7px;
+  height: 7px;
+  border-radius: 15px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1),
+    0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+  animation: universe 3s linear infinite;
+}
+
+#welcome-section span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 300px;
+  height: 1px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, white, transparent);
+}
+
+#welcome-section span:nth-child(1) {
+  top: 0;
+  right: 100px;
+  left: initial;
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+
+#welcome-section span:nth-child(2) {
+  top: 0;
+  right: -200px;
+  left: initial;
+  animation-delay: 0.5s;
+  animation-duration: 4.2s;
+}
+
+#welcome-section span:nth-child(3) {
+  top: 0;
+  right: 300px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3.8s;
+}
+
+#welcome-section span:nth-child(4) {
+  top: 0;
+  right: -400px;
+  left: initial;
+  animation-delay: 1.5s;
+  animation-duration: 5s;
+}
+
+#welcome-section span:nth-child(5) {
+  top: 0;
+  right: 500px;
+  left: initial;
+  animation-delay: 2s;
+  animation-duration: 4s;
+}
+
+#welcome-section span:nth-child(6) {
+  top: 0;
+  right: 600px;
+  left: initial;
+  animation-delay: 2.5s;
+  animation-duration: 3.5s;
+}
+
+#welcome-section span:nth-child(7) {
+  top: 0;
+  right: 700px;
+  left: initial;
+  animation-delay: 3s;
+  animation-duration: 4.8s;
+}
+
+#welcome-section span:nth-child(8) {
+  top: 0;
+  right: 800px;
+  left: initial;
+  animation-delay: 3.5s;
+  animation-duration: 5.2s;
+}
+
+#welcome-section span:nth-child(9) {
+  top: 0;
+  right: 900px;
+  left: initial;
+  animation-delay: 4s;
+  animation-duration: 3.2s;
+}
+
+#welcome-section span:nth-child(10) {
+  top: 0;
+  right: 1000px;
+  left: initial;
+  animation-delay: 4.5s;
+  animation-duration: 4.5s;
+}
+
+#welcome-section span:nth-child(11) {
+  top: 0;
+  right: 1200px;
+  left: initial;
+  animation-delay: 5s;
+  animation-duration: 6s;
+}
+
+#welcome-section span:nth-child(12) {
+  top: 0;
+  right: 1400px;
+  left: initial;
+  animation-delay: 5.5s;
+  animation-duration: 5.5s;
+}
+
+#welcome-section span:nth-child(13) {
+  top: 0;
+  right: 1600px;
+  left: initial;
+  animation-delay: 6s;
+  animation-duration: 7s;
+}
+
+#welcome-section span:nth-child(14) {
+  top: 0;
+  right: 1800px;
+  left: initial;
+  animation-delay: 6.5s;
+  animation-duration: 6.2s;
+}
+
+#welcome-section span:nth-child(15) {
+  top: 0;
+  right: 2000px;
+  left: initial;
+  animation-delay: 7s;
+  animation-duration: 5.8s;
+}
+
+#welcome-section span:nth-child(16) {
+  top: 0;
+  right: 2200px;
+  left: initial;
+  animation-delay: 7.5s;
+  animation-duration: 6.5s;
+}
+
+#welcome-section span:nth-child(17) {
+  top: 0;
+  right: 2400px;
+  left: initial;
+  animation-delay: 8s;
+  animation-duration: 7.2s;
+}
+
+#welcome-section span:nth-child(18) {
+  top: 0;
+  right: 2600px;
+  left: initial;
+  animation-delay: 8.5s;
+  animation-duration: 6.8s;
+}
+
+#welcome-section span:nth-child(19) {
+  top: 0;
+  right: 2800px;
+  left: initial;
+  animation-delay: 9s;
+  animation-duration: 7.5s;
+}
+
+#welcome-section span:nth-child(20) {
+  top: 0;
+  right: 3000px;
+  left: initial;
+  animation-delay: 9.5s;
+  animation-duration: 8s;
+}
+
+@keyframes universe {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+#welcome-h1-wrapper {
+  padding: 30px 50px 50px 50px;
+  animation: darkPurpleFade 30s infinite;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
+    rgba(0, 136, 255, 0.35) 0px -2px 6px 0px inset;
+  z-index: 99;
+}
+
+#welcome-section h1{
+  color: rgb(247, 230, 252);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 5.5vw;
+}
+
+#welcome-section h2 {
+  color: rgb(226, 211, 230);
+  font-style: oblique;
+  text-align: center;
+  font-size: 2.7vw;
+}
+
+#projects {
+  position: relative;
+  background-color: var(--waluigi-purple);
+  background-image: url(https://i.pinimg.com/originals/8e/46/15/8e46150f790fbefe438d9c2767c32ad1.gif);
+  z-index: 50;
+  padding-bottom: 50px;
+}
+
+#projects h1 {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-style: italic;
+  margin: 0 0;
+  text-align: center;
+  font-size: 4vw;
+  padding: 6vw 2vw;
+}
+
+.project-grid {
+  padding-top: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 98;
+}
+
+.project-tile {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+  width: 70vw;
+  height: 80vw;
+  background-color: var(--jovi-purple);
+  border-radius: 25px;
+  z-index: 99;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-tile p {
+  color: #2a1b3d;
+  font-style: oblique;
+  font-size: 4vw;
+  margin-bottom: 2vw;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.go_up {
+  transition: all 0.5s ease;
+}
+
+.go_up:hover {
+  transform: scale(1.05);
+}
+
+
+
+.text_3d{
+  text-shadow: 0 1px 0 var(--universe-purple), 0 2px 0 var(--universe-purple),
+      0 3px 0 var(--universe-purple), 0 4px 0 var(--universe-purple),
+      0 5px 0 var(--universe-purple), 0 6px 0 var(--universe-purple),
+      0 7px 0 var(--universe-purple), 0 8px 0 var(--universe-purple),
+      0 9px 0 var(--universe-purple), 0 10px 0 var(--universe-purple),
+      0 11px 0 var(--universe-purple), 0 12px 0 var(--universe-purple),
+      0 20px 30px rgba(0, 0, 0, 0.5);
+}
+.holographic-card {
+  transition: all 0.5s ease;
+}
+
+.holographic-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(255, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.7s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(204, 0, 255, 0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+#contacts{
+  padding: 50px;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgb(180, 95, 237) 0%, rgb(235, 32, 32) 50%, rgb(196, 119, 18) 100%);
+}
+
+#contacts h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#contacts p {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-links a i {
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
+
+@keyframes darkPurpleFade {
+  0% {
+    background-color: #4b0082; 
+  }
+  25% {
+    background-color: #483d8b; 
+  }
+  50% {
+    background-color: #3b2a60; 
+  }
+  75% {
+    background-color: #8a2be2; 
+  }
+  100% {
+    background-color: #4b0082;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project-tile {
+    width: calc(50% - 20px);
+    height: 55vw;
+  }
+
+  .project-tile p {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-tile {
+    height: 28vw;
+  }
+
+  #welcome-section h1 {
+    font-size: 55px;
+  }
+  #welcome-section h2 {
+    font-size: 27px;
+  }
+
+  li a {
+    padding: 35px 30px;
+  }
+
+  .project-tile {
+    width: calc(25% - 20px);
+  }
+
+  .project-tile p {
+    font-size: 1.6vw;
+    margin-bottom: 1.2vw;
+  }
+}
 
 ```
